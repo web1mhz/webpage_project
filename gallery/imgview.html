@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="" id="fullImg">        
+        <span onclick="closeFullImg()"><i class="material-icons">close</i></span>
+        <!-- <span onclick="closeFullImg()">X</span> -->
+    </div>
+
+    <div class="img-gallery">
+
+        <img src="https://picsum.photos/seed/{100}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{200}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{300}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{400}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{500}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{600}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{700}/600/600" onclick="openFullImg(this.src)">
+        <img src="https://picsum.photos/seed/{800}/600/600" onclick="openFullImg(this.src)">
+
+    </div>
+    
+    <script>
+        
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>

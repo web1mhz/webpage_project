@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="header">
+
+        <img src="img/logo.png" class="logo">
+
+        <div class="sidemenu" id="sidemenu"> 
+
+            <i class="fas fa-times" onclick="hide()"></i>  
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">생태지도</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+                       
+        </div> 
+        <i class="fas fa-bars" onclick="show()"></i>   
+
+
+        <div class="text-box">
+
+            <h1>국립공원 생태정보 플랫폼</h1>
+
+            <p>이 사이트는 <span>국립공원 생태자원</span>의 현황과 분포특성을 <br>
+                누구나 쉽게 접근하여 활용할 수 있도록 <b>유용한 정보</b>를 제공합니다.</p>
+                
+            <button class="btn">MORE INFO</button>            
+        </div>
+
+    </section>
+
+
+<script>
+
+    
+    let sidemenu = document.getElementById("sidemenu");   
+
+    function show(){ 
+
+        sidemenu.style.right="0";
+    }
+
+    function hide(){
+        sidemenu.style.right="-250px";
+    }
+
+
+</script>
+`
+</body>
+
+</html>

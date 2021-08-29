@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif, 'Noto Sans KR', 'Nanum Pen Script', cursive, sans-serif;
+    font-weight: 400;
+
+}
+
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), green),url(img/mt.png);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+}
+
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+    display: none; 
+}  /*Chrome, Safari, Opera*/
+
+.logo {
+
+    width: 150px;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    /* border-radius: 50%; */
+    /* box-shadow:  2px 2px 10px #05283c; */
+    display: block;
+
+}
+
+
+.sidemenu {
+
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #125064;
+    z-index: 2;
+    transition: 0.5s;
+
+}
+
+.sidemenu ul {
+
+    margin-top: 60px;
+    text-align: left;
+}
+
+.sidemenu ul li {
+    list-style: none;
+}
+
+
+.sidemenu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 18px 30px;
+    color: #ccc
+}
+
+.fas {
+
+    top: 0;
+    right: 0;
+    padding: 20px;
+    position: absolute;
+    font-size: 36px;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+
+
+.text-box {
+
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+
+.text-box h1 {
+
+    font-family: 'Nanum Pen Script';
+    padding-top: 60px;
+    font-size: 80px;
+    color: #e9e0d6;
+    text-shadow: 2px 2px 2px #125064;
+
+}
+
+
+.text-box p {
+
+    padding-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+
+}
+
+.text-box p span{
+
+    font-weight: bolder;
+}
+
+.text-box .btn {
+
+    margin-top: 50px;
+    padding: 12px 24px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+
+.text-box .btn:hover {
+    color:#000;
+    background: #fff;
+}
