@@ -116,13 +116,21 @@ body {
 
     padding-top: 20px;
     font-size: 14px;
-    color: #ccc;
+    color: #d2a675;
 
 }
 
 .text-box p span{
 
     font-weight: bolder;
+    text-shadow: 2px 2px 2px #125064;
+    
+}
+
+.text-box p:last-child{
+
+    font-size:20px;
+    text-shadow: 2px 2px 12px #b1d3df;
 }
 
 .text-box .btn {
